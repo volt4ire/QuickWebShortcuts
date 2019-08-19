@@ -2,6 +2,7 @@
 #define QUICKWEBSHORTCUTS_H
 
 #include <KRunner/AbstractRunner>
+#include "Config.h"
 
 class QuickWebShortcuts : public Plasma::AbstractRunner {
 Q_OBJECT
@@ -11,25 +12,15 @@ public:
 
     ~QuickWebShortcuts() override;
 
-    void reloadConfiguration() override;
-
+    Config config;
     KConfigGroup configGroup;
-
-    QString privateBrowser;
-
-    QMap<QString, QString> icons;
-
-    QMap<QString, QString> searchEngines;
-
-    QString searchEngine;
+    bool executed = false;
 
     Plasma::QueryMatch createMatch(const QString &text, const QMap<QString, QVariant> &data, const QString &icon = "");
 
 protected Q_SLOTS:
 
     void init() override;
-
-    void prepareForMatchSession();
 
     void matchSessionFinished();
 

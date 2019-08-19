@@ -1,3 +1,12 @@
+### QuickWebShortcuts
+
+This branch of the plugin contains a minified version.  
+This branch dies not have a graphical config dialog and settings have to be changes an the src/Config.h
+file, after making changes you have to recompile your project.
+
+By removing unnecessary dependencies and features the file size is significantly smaller
+and less code has to be executed.  
+
 # Build Instructions
 
 Required Dependencies on Debian/Ubuntu:  
@@ -21,15 +30,10 @@ Restart krunner to load the runner (in a terminal type: `kquitapp5 krunner;kstar
 
 This plugin allows you to use search engines inside Krunner. But instead of specifying the search
 engine every time can set one you want to use. The default is Google. If you type ":example query" it will open your 
-browser with the google search results for "example query". The default options are Bing, DuckDuckGo,
-Github, Google, Stackoverflow and Youtube. But you can add custom ones: The query gets appended to the provided url. 
-For instance "https://www.amazon.com/s?k=" is valid.
-
+browser with the google search results for "example query". 
 
 Additionally you can use this plugin to open search results in private/incognito mode. 
 This feature gets activated by typing "::example query".
-It has been tested with Firefox, Chromium, Google Chrome and Epiphany.
-But you have to manually select one of these as your default browser, otherwise firefox is used as default.
 
 ## Screenshots
 
@@ -38,13 +42,4 @@ But you have to manually select one of these as your default browser, otherwise 
 
 #### Search in private window
 ![Search in private window](https://raw.githubusercontent.com/alex1701c/Screenshots/master/QuickWebShortcuts/private_window_search.png)
-
-#### Change search engine in runner
-![Change search engine in runner](https://raw.githubusercontent.com/alex1701c/Screenshots/master/QuickWebShortcuts/change_searchengine_inside_runner.png)
-
-#### Add search engine
-![Add search engine](https://raw.githubusercontent.com/alex1701c/Screenshots/master/QuickWebShortcuts/dialog_add_searchengine.png)
-
-#### Edit search engine
-![Edit search engine](https://raw.githubusercontent.com/alex1701c/Screenshots/master/QuickWebShortcuts/dialog_edit_searchengines.png)
 
