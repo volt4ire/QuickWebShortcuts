@@ -1,7 +1,7 @@
 ### QuickWebShortcuts
 
 This branch of the plugin contains a minified version.  
-This branch dies not have a graphical config dialog and settings have to be changes an the src/Config.h
+This branch does not have a graphical config dialog and settings have to be changes an the src/Config.h
 file, after making changes you have to recompile your project.
 
 By removing unnecessary dependencies and features the file size is significantly smaller
